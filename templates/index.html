@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card</title>
+    <script src="https://kit.fontawesome.com/fcc3c3ff37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <style>
+        *{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+    background: linear-gradient(to right, rgb(111, 0, 255), rgb(255, 0, 255));
+    right: auto;
+    left: auto;
+}
+.card{
+    background-color: rgb(189, 189, 179);
+    background-size: cover;
+    height: 500px;
+    width: 300px;
+    border-radius: 12px;
+    margin-left: 35%;
+    margin-top: 5%;
+   
+}
+figure{
+    margin-left: 35%;
+    padding: 5px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    box-shadow: 5px 5px rgb(133, 127, 127) ;
+
+}
+.card-head h2, p{
+    text-align: center;
+    padding: 10px;
+}
+.card-body{
+    display: flex;
+    margin-top: 8%;
+}
+.card-body .item1{
+  
+   margin-left: 9%;
+}
+.card-body .item2{
+ 
+   margin-left: 5%;
+}
+.card-body .item3{
+  
+    margin-left: 5%;
+}
+
+.card-icons{
+    display: flex;
+    margin-top: 12%;
+}
+a{
+    margin-left: 7%
+}
+i{
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 3px 3px gray;
+}
+.card-btn1{
+    margin-top: 18%;
+    margin-left: 7.5%;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px  rgb(255, 0, 255);
+}
+.card-btn1:hover{
+    box-shadow: 5px 5px rgb(255, 0, 179);
+}
+.card-btn2{
+    margin-top: 18%;
+    margin-left: 7.5%;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px rgb(111, 0, 255);
+}
+.card-btn2:hover{
+    box-shadow: 5px 5px rgb(132, 0, 255);
+}
+@media (max-width: 768px) {
+    .card{
+        padding:15px;
+        margin-left: 100px;
+    }
+    body{
+        background: aqua;
+    }
+}
+@media (max-width: 900px) {
+    body{
+        background: rgb(255, 0, 191);
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <figure>
+        </figure>
+
+        <div class="card-head">
+            <h2>sebastiao</h2>
+            <p>Fullstack Developer</p>
+            <p>Brasil,pernambuco</p>
+        </div>
+
+        <div class="card-body">
+            <div class="item1">
+                <strong>followers</strong><br>
+                <p>700</p>
+            </div>
+            <div class="item2">
+                <strong>references</strong><br>
+                <p>15</p>
+            </div>
+            <div class="item3">
+                <strong>works</strong><br>
+                <p>21</p>
+            </div>
+        </div>
+
+        <div class="card-icons">
+            <a href="#"><i class="fa-brands fa-facebook" style="background-color: rgb(29, 120, 206);"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="background-color:  rgb(255, 0, 255);"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp" style="background-color: rgb(29, 206, 59);"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="background-color: rgb(30, 200, 223);"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin" style="background-color: rgb(29, 120, 206);"></i></a>
+        </div>
+
+        <div class="card-buttons">
+            <button class="card-btn1" style="background-color: rgb(111, 0, 255);">send message</button>
+            <button class="card-btn2" style="background-color: rgb(255, 0, 255);">follow me</button>
+        </div>
+    </div>    
+</body>
+</html>
